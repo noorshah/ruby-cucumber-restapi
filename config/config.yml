@@ -1,1 +1,7 @@
-base_url_countries:
+production: 'https://restcountries.eu/rest/v2/all'
+
+staging: 'https://restcountries.eu/rest/v2/all'
+
+test:  'https://restcountries.eu/rest/v2/all'
+
+development: 'https://restcountries.eu/rest/v2/all'

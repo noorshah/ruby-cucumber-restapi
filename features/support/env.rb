@@ -11,4 +11,4 @@ require 'yaml'
 require_relative '../support/countries_helper'
 
 
-# $BASE_URL_COUNTRIES=YAML::load(File.open('../../config/config.yml'))
+$ENVIRONMENT=YAML.load(File.open(File.expand_path('../../../', __FILE__)+'/config/config.yml'))
