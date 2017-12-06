@@ -1,0 +1,9 @@
+source "http://rubygems.org"
+gem 'cucumber'
+gem 'rest-client'
+gem 'json'
+gem 'jsonpath'
+gem 'json-schema'
+gem 'rspec'
+gem 'rake'
+gem 'regex'

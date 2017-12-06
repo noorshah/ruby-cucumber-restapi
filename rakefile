@@ -1,0 +1,11 @@
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+profiles = YAML::load(File.open('config/cucumber.yml'))
+puts profiles
+profiles.each do |cucumber_profile,cuccumber_profile_value|
+  Cucumber::Rake::Task.new(cucumber_profile.to_sym," description of #{cucumber_profile}") do |t|
+    t.profile = cucumber_profile
+  end
+end
