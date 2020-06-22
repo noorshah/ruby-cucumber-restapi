@@ -1,2 +1,4 @@
-# testAutomationRubyRestAPI
-test automation of rest api with ruby
+# ruby-cucumber-restapi
+`bundle install`
+
+`cucumber`
