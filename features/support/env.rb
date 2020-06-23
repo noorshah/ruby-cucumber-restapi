@@ -7,6 +7,8 @@ require 'jsonpath'
 require 'json-schema'
 require 'rubygems'
 require 'yaml'
+require 'faraday'
+require 'faraday_middleware'
 
 require_relative '../support/countries_helper'
 
