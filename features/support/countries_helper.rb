@@ -2,8 +2,7 @@ class Countries_Helper
 
 
   def self.get_countries
-    puts $ENVIRONMENT['staging']
-    Faraday.get($ENVIRONMENT['staging'])
+    Faraday.get($ENVIRONMENT['staging']+$ENVIRONMENT['all_countries'])
   end
 
   
@@ -14,6 +13,10 @@ class Countries_Helper
 
   def self.get_countries_list(response)
     countries_list=response_jsonpath(response,'$[*]name')
+  end
+
+  def self.get_italy_info
+    Faraday.get($ENVIRONMENT['staging']+$ENVIRONMENT['italy'])
   end
 
 end

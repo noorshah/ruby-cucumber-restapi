@@ -1,0 +1,916 @@
+{
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "name": "Italy",
+                "topLevelDomain": [
+                    ".it"
+                ],
+                "alpha2Code": "IT",
+                "alpha3Code": "ITA",
+                "callingCodes": [
+                    "39"
+                ],
+                "capital": "Rome",
+                "altSpellings": [
+                    "IT",
+                    "Italian Republic",
+                    "Repubblica italiana"
+                ],
+                "region": "Europe",
+                "subregion": "Southern Europe",
+                "population": 60665551,
+                "latlng": [
+                    42.83333333,
+                    12.83333333
+                ],
+                "demonym": "Italian",
+                "area": 301336.0,
+                "gini": 36.0,
+                "timezones": [
+                    "UTC+01:00"
+                ],
+                "borders": [
+                    "AUT",
+                    "FRA",
+                    "SMR",
+                    "SVN",
+                    "CHE",
+                    "VAT"
+                ],
+                "nativeName": "Italia",
+                "numericCode": "380",
+                "currencies": [
+                    {
+                        "code": "EUR",
+                        "name": "Euro",
+                        "symbol": "€"
+                    }
+                ],
+                "languages": [
+                    {
+                        "iso639_1": "it",
+                        "iso639_2": "ita",
+                        "name": "Italian",
+                        "nativeName": "Italiano"
+                    }
+                ],
+                "translations": {
+                    "de": "Italien",
+                    "es": "Italia",
+                    "fr": "Italie",
+                    "ja": "イタリア",
+                    "it": "Italia",
+                    "br": "Itália",
+                    "pt": "Itália",
+                    "nl": "Italië",
+                    "hr": "Italija",
+                    "fa": "ایتالیا"
+                },
+                "flag": "https://restcountries.eu/data/ita.svg",
+                "regionalBlocs": [
+                    {
+                        "acronym": "EU",
+                        "name": "European Union",
+                        "otherAcronyms": [],
+                        "otherNames": []
+                    }
+                ],
+                "cioc": "ITA"
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "name": "Italy",
+                        "topLevelDomain": [
+                            ".it"
+                        ],
+                        "alpha2Code": "IT",
+                        "alpha3Code": "ITA",
+                        "callingCodes": [
+                            "39"
+                        ],
+                        "capital": "Rome",
+                        "altSpellings": [
+                            "IT",
+                            "Italian Republic",
+                            "Repubblica italiana"
+                        ],
+                        "region": "Europe",
+                        "subregion": "Southern Europe",
+                        "population": 60665551,
+                        "latlng": [
+                            42.83333333,
+                            12.83333333
+                        ],
+                        "demonym": "Italian",
+                        "area": 301336.0,
+                        "gini": 36.0,
+                        "timezones": [
+                            "UTC+01:00"
+                        ],
+                        "borders": [
+                            "AUT",
+                            "FRA",
+                            "SMR",
+                            "SVN",
+                            "CHE",
+                            "VAT"
+                        ],
+                        "nativeName": "Italia",
+                        "numericCode": "380",
+                        "currencies": [
+                            {
+                                "code": "EUR",
+                                "name": "Euro",
+                                "symbol": "€"
+                            }
+                        ],
+                        "languages": [
+                            {
+                                "iso639_1": "it",
+                                "iso639_2": "ita",
+                                "name": "Italian",
+                                "nativeName": "Italiano"
+                            }
+                        ],
+                        "translations": {
+                            "de": "Italien",
+                            "es": "Italia",
+                            "fr": "Italie",
+                            "ja": "イタリア",
+                            "it": "Italia",
+                            "br": "Itália",
+                            "pt": "Itália",
+                            "nl": "Italië",
+                            "hr": "Italija",
+                            "fa": "ایتالیا"
+                        },
+                        "flag": "https://restcountries.eu/data/ita.svg",
+                        "regionalBlocs": [
+                            {
+                                "acronym": "EU",
+                                "name": "European Union",
+                                "otherAcronyms": [],
+                                "otherNames": []
+                            }
+                        ],
+                        "cioc": "ITA"
+                    }
+                ],
+                "required": [
+                    "name",
+                    "topLevelDomain",
+                    "alpha2Code",
+                    "alpha3Code",
+                    "callingCodes",
+                    "capital",
+                    "altSpellings",
+                    "region",
+                    "subregion",
+                    "population",
+                    "latlng",
+                    "demonym",
+                    "area",
+                    "gini",
+                    "timezones",
+                    "borders",
+                    "nativeName",
+                    "numericCode",
+                    "currencies",
+                    "languages",
+                    "translations",
+                    "flag",
+                    "regionalBlocs",
+                    "cioc"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "$id": "#/items/anyOf/0/properties/name",
+                        "type": "string",
+                        "title": "The name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Italy"
+                        ]
+                    },
+                    "topLevelDomain": {
+                        "$id": "#/items/anyOf/0/properties/topLevelDomain",
+                        "type": "array",
+                        "title": "The topLevelDomain schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                ".it"
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/topLevelDomain/items/anyOf/0",
+                                    "type": "string",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        ".it"
+                                    ]
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/topLevelDomain/items"
+                        }
+                    },
+                    "alpha2Code": {
+                        "$id": "#/items/anyOf/0/properties/alpha2Code",
+                        "type": "string",
+                        "title": "The alpha2Code schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "IT"
+                        ]
+                    },
+                    "alpha3Code": {
+                        "$id": "#/items/anyOf/0/properties/alpha3Code",
+                        "type": "string",
+                        "title": "The alpha3Code schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "ITA"
+                        ]
+                    },
+                    "callingCodes": {
+                        "$id": "#/items/anyOf/0/properties/callingCodes",
+                        "type": "array",
+                        "title": "The callingCodes schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                "39"
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/callingCodes/items/anyOf/0",
+                                    "type": "string",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "39"
+                                    ]
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/callingCodes/items"
+                        }
+                    },
+                    "capital": {
+                        "$id": "#/items/anyOf/0/properties/capital",
+                        "type": "string",
+                        "title": "The capital schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Rome"
+                        ]
+                    },
+                    "altSpellings": {
+                        "$id": "#/items/anyOf/0/properties/altSpellings",
+                        "type": "array",
+                        "title": "The altSpellings schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                "IT",
+                                "Italian Republic"
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/altSpellings/items/anyOf/0",
+                                    "type": "string",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "IT",
+                                        "Italian Republic"
+                                    ]
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/altSpellings/items"
+                        }
+                    },
+                    "region": {
+                        "$id": "#/items/anyOf/0/properties/region",
+                        "type": "string",
+                        "title": "The region schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Europe"
+                        ]
+                    },
+                    "subregion": {
+                        "$id": "#/items/anyOf/0/properties/subregion",
+                        "type": "string",
+                        "title": "The subregion schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Southern Europe"
+                        ]
+                    },
+                    "population": {
+                        "$id": "#/items/anyOf/0/properties/population",
+                        "type": "integer",
+                        "title": "The population schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            60665551
+                        ]
+                    },
+                    "latlng": {
+                        "$id": "#/items/anyOf/0/properties/latlng",
+                        "type": "array",
+                        "title": "The latlng schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                42.83333333,
+                                12.83333333
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/latlng/items/anyOf/0",
+                                    "type": "number",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0.0,
+                                    "examples": [
+                                        42.83333333,
+                                        12.83333333
+                                    ]
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/latlng/items"
+                        }
+                    },
+                    "demonym": {
+                        "$id": "#/items/anyOf/0/properties/demonym",
+                        "type": "string",
+                        "title": "The demonym schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Italian"
+                        ]
+                    },
+                    "area": {
+                        "$id": "#/items/anyOf/0/properties/area",
+                        "type": "number",
+                        "title": "The area schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                            301336.0
+                        ]
+                    },
+                    "gini": {
+                        "$id": "#/items/anyOf/0/properties/gini",
+                        "type": "number",
+                        "title": "The gini schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                            36.0
+                        ]
+                    },
+                    "timezones": {
+                        "$id": "#/items/anyOf/0/properties/timezones",
+                        "type": "array",
+                        "title": "The timezones schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                "UTC+01:00"
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/timezones/items/anyOf/0",
+                                    "type": "string",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "UTC+01:00"
+                                    ]
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/timezones/items"
+                        }
+                    },
+                    "borders": {
+                        "$id": "#/items/anyOf/0/properties/borders",
+                        "type": "array",
+                        "title": "The borders schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                "AUT",
+                                "FRA"
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/borders/items/anyOf/0",
+                                    "type": "string",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "AUT",
+                                        "FRA"
+                                    ]
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/borders/items"
+                        }
+                    },
+                    "nativeName": {
+                        "$id": "#/items/anyOf/0/properties/nativeName",
+                        "type": "string",
+                        "title": "The nativeName schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Italia"
+                        ]
+                    },
+                    "numericCode": {
+                        "$id": "#/items/anyOf/0/properties/numericCode",
+                        "type": "string",
+                        "title": "The numericCode schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "380"
+                        ]
+                    },
+                    "currencies": {
+                        "$id": "#/items/anyOf/0/properties/currencies",
+                        "type": "array",
+                        "title": "The currencies schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                {
+                                    "code": "EUR",
+                                    "name": "Euro",
+                                    "symbol": "€"
+                                }
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/currencies/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {
+                                            "code": "EUR",
+                                            "name": "Euro",
+                                            "symbol": "€"
+                                        }
+                                    ],
+                                    "required": [
+                                        "code",
+                                        "name",
+                                        "symbol"
+                                    ],
+                                    "additionalProperties": true,
+                                    "properties": {
+                                        "code": {
+                                            "$id": "#/items/anyOf/0/properties/currencies/items/anyOf/0/properties/code",
+                                            "type": "string",
+                                            "title": "The code schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "EUR"
+                                            ]
+                                        },
+                                        "name": {
+                                            "$id": "#/items/anyOf/0/properties/currencies/items/anyOf/0/properties/name",
+                                            "type": "string",
+                                            "title": "The name schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "Euro"
+                                            ]
+                                        },
+                                        "symbol": {
+                                            "$id": "#/items/anyOf/0/properties/currencies/items/anyOf/0/properties/symbol",
+                                            "type": "string",
+                                            "title": "The symbol schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "€"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/currencies/items"
+                        }
+                    },
+                    "languages": {
+                        "$id": "#/items/anyOf/0/properties/languages",
+                        "type": "array",
+                        "title": "The languages schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                {
+                                    "iso639_1": "it",
+                                    "iso639_2": "ita",
+                                    "name": "Italian",
+                                    "nativeName": "Italiano"
+                                }
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/languages/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {
+                                            "iso639_1": "it",
+                                            "iso639_2": "ita",
+                                            "name": "Italian",
+                                            "nativeName": "Italiano"
+                                        }
+                                    ],
+                                    "required": [
+                                        "iso639_1",
+                                        "iso639_2",
+                                        "name",
+                                        "nativeName"
+                                    ],
+                                    "additionalProperties": true,
+                                    "properties": {
+                                        "iso639_1": {
+                                            "$id": "#/items/anyOf/0/properties/languages/items/anyOf/0/properties/iso639_1",
+                                            "type": "string",
+                                            "title": "The iso639_1 schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "it"
+                                            ]
+                                        },
+                                        "iso639_2": {
+                                            "$id": "#/items/anyOf/0/properties/languages/items/anyOf/0/properties/iso639_2",
+                                            "type": "string",
+                                            "title": "The iso639_2 schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "ita"
+                                            ]
+                                        },
+                                        "name": {
+                                            "$id": "#/items/anyOf/0/properties/languages/items/anyOf/0/properties/name",
+                                            "type": "string",
+                                            "title": "The name schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "Italian"
+                                            ]
+                                        },
+                                        "nativeName": {
+                                            "$id": "#/items/anyOf/0/properties/languages/items/anyOf/0/properties/nativeName",
+                                            "type": "string",
+                                            "title": "The nativeName schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "Italiano"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/languages/items"
+                        }
+                    },
+                    "translations": {
+                        "$id": "#/items/anyOf/0/properties/translations",
+                        "type": "object",
+                        "title": "The translations schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "de": "Italien",
+                                "es": "Italia",
+                                "fr": "Italie",
+                                "ja": "イタリア",
+                                "it": "Italia",
+                                "br": "Itália",
+                                "pt": "Itália",
+                                "nl": "Italië",
+                                "hr": "Italija",
+                                "fa": "ایتالیا"
+                            }
+                        ],
+                        "required": [
+                            "de",
+                            "es",
+                            "fr",
+                            "ja",
+                            "it",
+                            "br",
+                            "pt",
+                            "nl",
+                            "hr",
+                            "fa"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "de": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/de",
+                                "type": "string",
+                                "title": "The de schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Italien"
+                                ]
+                            },
+                            "es": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/es",
+                                "type": "string",
+                                "title": "The es schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Italia"
+                                ]
+                            },
+                            "fr": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/fr",
+                                "type": "string",
+                                "title": "The fr schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Italie"
+                                ]
+                            },
+                            "ja": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/ja",
+                                "type": "string",
+                                "title": "The ja schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "イタリア"
+                                ]
+                            },
+                            "it": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/it",
+                                "type": "string",
+                                "title": "The it schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Italia"
+                                ]
+                            },
+                            "br": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/br",
+                                "type": "string",
+                                "title": "The br schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Itália"
+                                ]
+                            },
+                            "pt": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/pt",
+                                "type": "string",
+                                "title": "The pt schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Itália"
+                                ]
+                            },
+                            "nl": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/nl",
+                                "type": "string",
+                                "title": "The nl schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Italië"
+                                ]
+                            },
+                            "hr": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/hr",
+                                "type": "string",
+                                "title": "The hr schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Italija"
+                                ]
+                            },
+                            "fa": {
+                                "$id": "#/items/anyOf/0/properties/translations/properties/fa",
+                                "type": "string",
+                                "title": "The fa schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "ایتالیا"
+                                ]
+                            }
+                        }
+                    },
+                    "flag": {
+                        "$id": "#/items/anyOf/0/properties/flag",
+                        "type": "string",
+                        "title": "The flag schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "https://restcountries.eu/data/ita.svg"
+                        ]
+                    },
+                    "regionalBlocs": {
+                        "$id": "#/items/anyOf/0/properties/regionalBlocs",
+                        "type": "array",
+                        "title": "The regionalBlocs schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                {
+                                    "acronym": "EU",
+                                    "name": "European Union",
+                                    "otherAcronyms": [],
+                                    "otherNames": []
+                                }
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/regionalBlocs/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {
+                                            "acronym": "EU",
+                                            "name": "European Union",
+                                            "otherAcronyms": [],
+                                            "otherNames": []
+                                        }
+                                    ],
+                                    "required": [
+                                        "acronym",
+                                        "name",
+                                        "otherAcronyms",
+                                        "otherNames"
+                                    ],
+                                    "additionalProperties": true,
+                                    "properties": {
+                                        "acronym": {
+                                            "$id": "#/items/anyOf/0/properties/regionalBlocs/items/anyOf/0/properties/acronym",
+                                            "type": "string",
+                                            "title": "The acronym schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "EU"
+                                            ]
+                                        },
+                                        "name": {
+                                            "$id": "#/items/anyOf/0/properties/regionalBlocs/items/anyOf/0/properties/name",
+                                            "type": "string",
+                                            "title": "The name schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "European Union"
+                                            ]
+                                        },
+                                        "otherAcronyms": {
+                                            "$id": "#/items/anyOf/0/properties/regionalBlocs/items/anyOf/0/properties/otherAcronyms",
+                                            "type": "array",
+                                            "title": "The otherAcronyms schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": [],
+                                            "examples": [
+                                                []
+                                            ],
+                                            "additionalItems": true,
+                                            "items": {
+                                                "anyOf": [],
+                                                "$id": "#/items/anyOf/0/properties/regionalBlocs/items/anyOf/0/properties/otherAcronyms/items"
+                                            }
+                                        },
+                                        "otherNames": {
+                                            "$id": "#/items/anyOf/0/properties/regionalBlocs/items/anyOf/0/properties/otherNames",
+                                            "type": "array",
+                                            "title": "The otherNames schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": [],
+                                            "examples": [
+                                                []
+                                            ],
+                                            "additionalItems": true,
+                                            "items": {
+                                                "anyOf": [],
+                                                "$id": "#/items/anyOf/0/properties/regionalBlocs/items/anyOf/0/properties/otherNames/items"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "$id": "#/items/anyOf/0/properties/regionalBlocs/items"
+                        }
+                    },
+                    "cioc": {
+                        "$id": "#/items/anyOf/0/properties/cioc",
+                        "type": "string",
+                        "title": "The cioc schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "ITA"
+                        ]
+                    }
+                }
+            }
+        ],
+        "$id": "#/items"
+    }
+}
