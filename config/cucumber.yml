@@ -1,2 +1,2 @@
-default: --format pretty --format html --out=features_test_results.html
-countries: --format pretty --format html --out=features_test_results.html  -t @countries
+default: --format pretty --format html --out=reports/features_test_results.html
+countries: --format pretty --format html --out=reports/features_test_results.html  -t @countries
